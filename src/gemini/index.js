@@ -35,7 +35,8 @@
   ];
 
   async function run(textInput, chatHistory) {
-    const history = (chatHistory || []).map((item) => {
+  const history = (chatHistory || []).map((item) => 
+    {
       return{
         role: item.isBot ? 'model' : 'user',
         parts: [{text: item.text}]
